@@ -25,6 +25,7 @@ function approveOrder($barcode)
         ["message" => "order successfully approved"],
         ["error" => "event cancelled"],
         ["error" => "no tickets"],
+        ["error" => "no seats"],
         ["error" => "fan removed"]
     ];
     return $responses[array_rand($responses)];
